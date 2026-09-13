@@ -6,11 +6,15 @@ class NumberReverse {
         Scanner sc = new Scanner(System.in);
 		System.out.print("Enter  the number : ");
                   int num= sc.nextInt();
+			int digit=0;
+			int rev=0;
 		while(num!=0){
-		int rev=	num%10;
-		System.out.print(rev);
-		num=num/10;
+		digit = num % 10;
+		rev = rev * 10 + digit;
+		num = num / 10;
 }
+		System.out.print(rev);
+
 
 }
 		}
